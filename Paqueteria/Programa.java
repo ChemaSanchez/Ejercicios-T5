@@ -11,15 +11,19 @@ package Paqueteria;
  */
 public class Programa {
     public static void main (String args[]){
-        Paquete p = new Paquete("Rueda", "Camino Escuzar 1 3D", 1);
-        Paquete p2 = new Paquete("Rueda", "Camino Escuzar 1 3D", 1);
-        Paquete p3 = new Paquete("Cuerda", "Camino Escuzar 1 3D", 3);
+        Paquete p = new Paquete("Tela", "Camino Escuzar 1 3D", 1);
+        Paquete p2 = new Paquete("Rueda", "Camino Escuzar 1 3D", 2);
+        Paquete p3 = new Paquete("Cuerda", "Camino Escuzar 1 3D", 1);
+        Paquete p4 = new Paquete("Cuerda", "Camino Escuzar 1 3D", 3);
         
-        System.out.println(p.compareTo(p3));
+        //System.out.println(p.compareTo(p3));
         
-        Transportista t = new Transportista(1000);
+        TransportistaOrdenado t = new TransportistaOrdenado(1000);
         t.subirCamion(p);
-        t.subirCamion(p3);
+        t.subirCamion(p2);
+        //t.subirCamion(p3);
+        //t.subirCamion(p4);
         t.enviar();
+       
     }
 }

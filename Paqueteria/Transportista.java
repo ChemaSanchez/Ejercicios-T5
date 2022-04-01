@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  *
  * @author Chema
  */
-public class Transportista {
+public class Transportista{
     private List<Paquete> paquetes;
     private long tiempoEntrega;
 

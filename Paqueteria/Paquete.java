@@ -76,12 +76,9 @@ public class Paquete implements Comparable<Paquete>{
     }
     
     public int compareTo(Paquete p) {
-        Integer prioridadp = p.getPrioridad();
-        //int resultado = 0;
-        //if(prioridadp>=this.prioridad) resultado = prioridadp - this.prioridad;
-        //else resultado = this.prioridad - prioridadp;
-        return prioridadp.compareTo(this.prioridad);
-        
+        //Integer prioridadp = p.getPrioridad();
+        //return prioridadp.compareTo(this.prioridad);
+        return this.prioridad - p.getPrioridad();
     } 
     
 }

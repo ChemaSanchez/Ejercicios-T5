@@ -15,5 +15,10 @@ public interface EmpresaPaqueteria {
     
     public void registrarPedido(Paquete p);
     public List<Transportista> getTransportistas();
+    public default void enviarPaquetes(){
+        for (int i = 0; i < getTransportistas().size(); i++){
+            //Enviar Paquete 
+        }
+    }
     
 }
